@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+    <title>ecommerce</title>
+  </head>
+  <body class="relative h-screen bg-gray-200 ">
+	<header class="w-full bg-red-700">
+		<section class="container mx-auto flex flex-row items-center h-16">
+			<a class=" text-2xl text-white font-bold w-1/5" href="#">Belleza D&C</a>
+			<div class="flex self-center w-3/5 justify-center">
+				<p class="text-xl text-white font-semibold">Proceso de compra</p>
+			</div>
+		</section>
+	</header>
+	<main class="w-full pb-5">
+		<div class="w-full border-b-2 border-gray-400">
+			<div class="container py-1 mx-auto text-right">
+				<p>Hola Mario</p>
+			</div>
+		</div>
+		<div class="container mx-auto">
+			<div class="w-full flex items-center flex-col py-4">
+				<div class="w-6/12 flex flex-row">
+					<div class="w-1/3 flex flex-row justify-center dothOne relative ">
+						<div class="text-white z-10 flex justify-center items-center text-xl bg-red-700 rounded-full w-12 h-12">1</div>
+					</div>
+					<div class="w-1/3 flex flex-row justify-center dothOne relative">
+						<div class="text-white z-10 flex justify-center items-center text-xl bg-red-700 rounded-full w-12 h-12">2</div>
+					</div>
+					<div class="w-1/3 flex flex-row justify-center">
+						<div class="text-white flex z-10 justify-center items-center text-xl bg-red-700 rounded-full w-12 h-12">3</div>
+					</div>
+				</div>
+				<div class="w-6/12 flex flex-row">
+					<div class="w-1/3 flex justify-center">
+						<p class="text-sm font-semibold">Envio</p>
+					</div>
+					<div class="w-1/3 flex justify-center">
+						<p class="text-sm font-semibold">Pago</p>
+					</div>
+					<div class="w-1/3 flex justify-center">
+						<p class="text-sm font-semibold">Resumen</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- datos personales -->
+			<div class="w-full flex flex-col border-2 border-black py-4 px-2 bg-white mb-4">
+				<div class="w-full mb-3 px-2">
+					<p class="text-lg font-bold">Datos personales</p>
+				</div>
+				<div class="w-full flex flex-row">
+					<div class="w-1/3 flex flex-col px-2">
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Nombre</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Correo electronico*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+						<div class="w-full flex flex-col">
+							<label class="font-semibold text-xs">Fecha de nacimiento</label>
+							<input class="w-full border-2 border-black outline-none" type="date">
+						</div>
+					</div>
+					<div class="w-1/3 flex flex-col px-2">
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Apellido Paterno*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Tipo de documento*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>DNI</option>
+								<option>Partida de nacimiento</option>
+								<option>RUC</option>
+							</select>
+						</div>
+					</div>
+					<div class="w-1/3 flex flex-col px-2 mb-3">
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Apellido Materno*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Documento*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- datos personales end-->
+
+			<!-- elije direccion -->
+			<div id="backDireccion" class="w-full flex flex-col border-2 border-black py-4 px-2 bg-white">
+				<div class="w-full mb-3 px-2">
+					<p class="text-lg font-bold">Elije direccion de envio</p>
+				</div>
+				<div class="w-full flex flex-row">
+					<div class="w-1/5 flex flex-col">
+						<a href="#newAdressPopup" class="p-2">
+							<!-- elejir nueva direccion -->
+							<div class="w-full flex items-center cursor-pointer justify-center h-24 border-2 border-dashed border-black rounded-lg">
+								<p>Agregar direccion</p>
+							</div>
+							<!-- elejir nueva direccion end-->
+						</a>
+					</div>
+					<div class="w-1/5 flex flex-col">
+						<a href="#newAdressPopup" class="p-2">
+							<!-- elejir nueva direccion -->
+							<div class="w-full flex flex-row items-center  h-24 border-2 p-2 border-black">
+								<input class="mr-3" type="radio" name="direccion" id="">
+								<label class="mr-3" for="radio">
+									<ul>
+										<li class="text-xs text-red-700">Casa</li>
+										<li class="text-xs text-red-700">Jose Carlos Mareategui 315</li>
+										<li class="text-xs text-red-700">Ref. Paradesros Arica</li>
+										<li class="text-xs text-red-700">Lima, Lima, Lima</li>
+										<li class="text-xs text-red-700">Cel 999999888</li>
+									</ul>
+								</label>
+								<button>
+									<svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/>
+									</svg>
+								</button>
+							</div>
+							<!-- elejir nueva direccion end-->
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- elije direccion end-->
+			<div class="w-full flex flex-row justify-between items-center border-2 border-black py-4 px-2 bg-gray-900">
+				<div class="w-1/3 flex flex-row">
+					<div class="w-1/3 flex flex-col px-2">						
+						<p class="text-white text-xs font-semibold">2 Productos</p>
+						<p class="text-white font-bold">S/ 164.20</p>
+					</div>
+					<div class="w-1/3 flex flex-col px-2">						
+						<p class="text-white text-xs font-semibold">Descuento</p>
+						<p class="text-white font-bold">S/ 45.20</p>
+					</div>
+					<div class="w-1/3 flex flex-col px-2">						
+						<p class="text-white text-xs font-semibold">Costo de envio</p>
+						<p class="text-white font-bold">S/ 0.00</p>
+					</div>
+				</div>
+				<div class="w-1/3 flex flex-row">
+					<div class="w-1/2 pr-2">
+						<div class="py-2 w-full border-2 border-black bg-gray-500 text-white text-center font-semibold">
+							Total S/119.20
+						</div>
+					</div>
+					<div class="w-1/2 pl-2 ">
+						<button class="py-2 w-full border-2 border-black bg-red-700 text-white text-center font-semibold focus:outline-none">
+							Continuar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class=" bg-indigo-900 text-center text-white font-semibold py-4 absolute bottom-0 w-full">
+		Pie de pagina
+	</footer>
+	<!-- newAdressPopup -->
+	<div id="newAdressPopup" class="w-full h-full fixed flex top-0 left-0 z-20">
+		<div class="container mx-auto flex justify-center items-center">
+			<div class="w-6/12 border-2 relative border-black bg-white py-4 px-2 flex flex-col">
+				<div class="w-full flex justify-center">
+					<p class="text-xl font-semibold">
+						Nueva Direccion
+					</p>
+				</div>
+				<div class="w-full flex flex-row">
+					<div class="w-1/2 flex flex-col px-2">
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Celular*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Departamento*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Lima</option>
+								<option>Piura</option>
+								<option>Ica</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Distrito*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Lima</option>
+								<option>Piura</option>
+								<option>Ica</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Referencia*</label>
+							<textarea class="w-full border-2 border-black outline-none"></textarea>
+						</div>
+					</div>
+					<div class="w-1/2 flex flex-col px-2">						
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Tipo de vivienda*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Casa</option>
+								<option>Cuarto</option>
+								<option>Departamento</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Provincia*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Lima</option>
+								<option>Huaral</option>
+								<option>Huaraz</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Direccion*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="w-full flex justify-center">
+					<button class="focus:outline-none font-semibold text-white bg-red-700 border-2 border-black py-1 px-2">
+						Guardar direccion
+					</button>
+				</div>
+				<a href="#backDireccion" class="absolute top-0 right-0 mr-1 mt-1">
+					<svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zM11.4 10l2.83-2.83-1.41-1.41L10 8.59 7.17 5.76 5.76 7.17 8.59 10l-2.83 2.83 1.41 1.41L10 11.41l2.83 2.83 1.41-1.41L11.41 10z"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
